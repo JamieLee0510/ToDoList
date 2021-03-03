@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <full-calendar :events="Events" locale="en"></full-calendar>
-  </div>
+  <full-calendar :events="Events" locale="en"></full-calendar>
 </template>
 
 <script>

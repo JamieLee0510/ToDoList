@@ -6,7 +6,7 @@
     text-color="#fff"
     active-text-color="#ffd04b"
     :collapse="collapse"
-    style="min-height: 100vh"
+    style="height: 100%"
   >
     <!-- 測試在父組件做collapse -->
     <!-- <el-menu

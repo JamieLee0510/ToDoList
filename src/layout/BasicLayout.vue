@@ -68,4 +68,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.el-main {
+  text-align: center;
+}
+</style>

@@ -13,7 +13,7 @@ export default new Vuex.Store({
     pushTodoJobs(state, payload) {
       state.todoJobs.push(payload);
     },
-    deleteItem(state, payload) {
+    finishJob(state, payload) {
       const doneJob = state.todoJobs[payload];
       state.doneJobs.push(doneJob);
       setTimeout(() => {
@@ -28,6 +28,9 @@ export default new Vuex.Store({
       setTimeout(() => {
         state.doneJobs.splice(payload, 1);
       });
+    },
+    deleteJob(state, payload) {
+      state.doneJobs.splice(payload, 1);
     },
   },
   actions: {},
