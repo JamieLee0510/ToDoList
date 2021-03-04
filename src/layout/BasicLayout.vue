@@ -9,18 +9,26 @@
         <SideMenu :collapse="isCollapse" />
       </el-aside>
       <el-container>
-        <el-header style="background: #fff; padding: 0; width: 100%">
-          <el-button
-            :icon="isCollapse ? 'el-icon-s-unfold' : 'el-icon-s-fold'"
-            @click="collapseStatus"
-          ></el-button>
-
-          <!-- <i
-          class="trigger"
-          :type="collapsed ? 'menu-unfold' : 'menu-fold'"
-          @click="collapsed = !collapsed"
-        ></i> -->
-          <Header />
+        <el-header
+          style="background: #fff; padding: 0; width: 100%;  line-height: 60px;"
+        >
+          <el-row>
+            <el-col :span="1">
+              <el-button
+                :icon="isCollapse ? 'el-icon-s-unfold' : 'el-icon-s-fold'"
+                @click="collapseStatus"
+              ></el-button>
+            </el-col>
+            <el-col :span="23">
+              <div style="width:160px; height:70px">
+                <img
+                  src="../assets/todolistimg.png"
+                  alt=""
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+            </el-col>
+          </el-row>
         </el-header>
 
         <el-main>

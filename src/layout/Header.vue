@@ -8,6 +8,6 @@ export default {};
 
 <style>
 .header {
-  float: right;
+  text-align: center;
 }
 </style>
